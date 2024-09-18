@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff6347;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu {
+    padding: 2em;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 1em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin: 0.5em 0;
+}
+
+.menu-item p {
+    font-size: 0.9em;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #ff6347;
+    display: block;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+#pedido {
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+#pedido ul {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+#form-pedido input {
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(50% - 1em);
+}
+
+#form-pedido button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 0.5em 0;
+}

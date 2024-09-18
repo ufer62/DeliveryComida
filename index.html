@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Comidas Alto Noa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#pedido">Hacer Pedido</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Nuestro Menú</h2>
+        <div class="menu-item">
+            <img src="imagenes/R.jfif" alt="Comida 1">
+            <h3>Pizza Margarita</h3>
+            <p>Deliciosa pizza con salsa de tomate, mozzarella y albahaca.</p>
+            <span>$12.99</span>
+            <button onclick="agregarAlCarrito('Pizza Margarita', 12.99)">Añadir al carrito</button>
+        </div>
+        <div class="menu-item">
+            <img src="imagenes/OIP.jfif" alt="Comida 2">
+            <h3>Hamburguesa Clásica</h3>
+            <p>Hamburguesa con carne de res, queso cheddar, lechuga y tomate.</p>
+            <span>$9.99</span>
+            <button onclick="agregarAlCarrito('Hamburguesa Clásica', 9.99)">Añadir al carrito</button>
+        </div>
+        <div class="menu-item">
+            <img src="imagenes/R (1).jfif" alt="Comida 3">
+            <h3>Ensalada César</h3>
+            <p>Ensalada fresca con pollo, lechuga, parmesano y aderezo César.</p>
+            <span>$7.99</span>
+            <button onclick="agregarAlCarrito('Ensalada César', 7.99)">Añadir al carrito</button>
+        </div>
+    </section>
+
+    <section id="pedido">
+        <h2>Tu Pedido</h2>
+        <ul id="carrito"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <form id="form-pedido">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="direccion" placeholder="Dirección" required>
+            <button type="submit">Realizar Pedido</button>
+        </form>
+    </section>
+
+    <footer id="contacto">
+        <p>Contacto: 123-456-789</p>
+        <p>Email: delivery@comida.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
